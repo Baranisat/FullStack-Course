@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #000000;
+  opacity: 1;
+  font-family: "Gill sans";
+  font-size:larger;
+  font-weight: bold;
+}
+
+body {
+  padding: 50px;
+  color: #f7f7f7;
+  min-height: 100vh;
+  background: linear-gradient(57.4deg, rgb(249, 206, 183) 4.6%, rgb(234, 174, 202) 26%, rgb(210, 182, 226) 49.1%, rgb(173, 209, 242) 86.5%);
+  text-rendering: optimizeSpeed;
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  padding: 1rem;
+  max-width: 50%;
+  margin: 0 auto;
+  border-radius: 3rem;
+  cursor: pointer;
+  text-align: center;
+  background-color: #e7eaf6;
+  font-family: "gill sans";
+  box-shadow: #e473f3 0px 2px 5px;
+}
+
+h1 {
+  font-weight: 300;
+  color:#c54c82;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.input-wrapper {
+  color:rgb(0, 0, 0);
+  margin: 3.5rem;
+}
+
+.todos-wrapper {
+  margin-bottom: 2.5rem;
+}
+
+.todo {
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+input {
+  width: 450px;
+  padding: 0.8em;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: larger;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  width: 120px;
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+input,
+button {
+  font-size: 1.2em;
+  font-weight: bold;
+  appearance: none;
+  color: currentcolor;
+  background: linear-gradient(57.4deg, rgb(234, 174, 202) 26%, rgb(210, 182, 226) 49.1%);
+  border: 1px solid #d59bf6;
+}
+
+.add-button {
+  margin-top: 4px;
+  color: #c54c82;
+  background: rgb(210, 182, 226);
+  border: 10%;
+  border: 1px solid #d59bf6;
+}
+
+.delete-button {
+  margin-left: 4px;
+  margin-top: 10px;
+  color: #c54c82;
+  background: rgb(173, 209, 242);
+  border: 1px solid #d59bf6;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+li {
+  font-size: 1.2em;
+  width: 440px;
+  padding: 0.85em;
+  text-align: left;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(57.4deg, rgb(234, 174, 202) 26%, rgb(210, 182, 226) 49.1%);
+  border: 1px solid #d59bf6;
+  letter-spacing: 0.02rem;
+  transition: all 0.3s ease-out;
+  border-left: 5px solid #906387;
+}
+
+li:last-child {
+  margin-bottom: 0px;
+}
+
+.empty {
+  font-size: 20px;
+  font-weight:bold;
+  color: #c54c82;
+  letter-spacing: 0.2rem;
+}
